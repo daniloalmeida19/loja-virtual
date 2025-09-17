@@ -1,0 +1,179 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo Principal */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.produtos {
+    text-align: center;
+}
+
+.container-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Estilo de cada produto */
+.produto {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.produto .preco {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Estilos da Página de Contato */
+.contato-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.contato-section h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.contato-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.contato-form, .contato-info {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    flex: 1; /* Permite que os itens cresçam e ocupem espaço */
+    min-width: 300px; /* Garante que não fiquem muito pequenos */
+    max-width: 500px;
+    text-align: left;
+}
+
+.contato-form h3, .contato-info h3 {
+    color: #007BFF;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: calc(100% - 20px); /* Ajusta para padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.whatsapp-link {
+    display: inline-block;
+    background-color: #25D366; /* Cor do WhatsApp */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.whatsapp-link:hover {
+    background-color: #1DA851;
+}
+
+.contato-info iframe {
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Responsividade básica */
+@media (max-width: 768px) {
+    .contato-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contato-form, .contato-info {
+        max-width: 90%; /* Ocupa mais largura em telas menores */
+    }
+}
