@@ -15,38 +15,28 @@
                 <li><a href="roupas.html">Roupas</a></li>
                 <li><a href="sapatos.html">Sapatos</a></li>
                 <li><a href="contato.html">Contato</a></li>
+                <li>
+                    <a href="carrinho.html" class="link-carrinho">
+                        Carrinho <span id="contador-carrinho">0</span>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="contato-section">
-            <h2>Entre em Contato Conosco</h2>
+            <h2>Nossos Canais de Contato</h2>
 
             <div class="contato-container">
-                <div class="contato-form">
-                    <h3>Envie-nos uma Mensagem</h3>
-                    <form action="#" method="POST"> <!-- O 'action' seria para um script de backend -->
-                        <div class="form-group">
-                            <label for="nome">Nome:</label>
-                            <input type="text" id="nome" name="nome" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">E-mail:</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="mensagem">Mensagem:</label>
-                            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-                        </div>
-                        <button type="submit">Enviar Mensagem</button>
-                    </form>
-                </div>
-
                 <div class="contato-info">
-                    <h3>Outras Formas de Contato</h3>
+                    <h3>Fale Conosco</h3>
                     <p>Fale conosco pelo WhatsApp:</p>
                     <p><a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-link">Enviar Mensagem via WhatsApp</a></p>
+                    
+                    <p>Acompanhe as novidades em nosso Instagram:</p>
+                    <p><a href="https://www.instagram.com/SEU_USUARIO_AQUI" target="_blank" class="instagram-link">Visite nosso Instagram</a></p>
+
                     <p>Nosso Endereço:</p>
                     <p>Rua Exemplo, 123 - Centro<br>Cidade, Estado - CEP 00000-000</p>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.302324080187!2d-43.1776999849704!3d-22.90684678501257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f5e01b3b3b3%3A0x1b0b0b0b0b0b0b0b!2sRio%20de%20Janeiro%2C%20RJ!5e0!3m2!1spt-BR!2sbr!4v1678901234567!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -58,5 +48,6 @@
     <footer>
         <p>&copy; 2025 Minha Loja de Roupas e Sapatos. Todos os direitos reservados.</p>
     </footer>
+    <script src="carrinho.js"></script>
 </body>
 </html>
