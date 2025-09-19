@@ -15,6 +15,11 @@
                 <li><a href="roupas.html">Roupas</a></li>
                 <li><a href="sapatos.html">Sapatos</a></li>
                 <li><a href="contato.html">Contato</a></li>
+                <li>
+                    <a href="carrinho.html" class="link-carrinho">
+                        Carrinho <span id="contador-carrinho">0</span>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -23,46 +28,46 @@
         <section class="produtos">
             <h2>Nossa Coleção de Roupas</h2>
             <div class="container-produtos">
-                <article class="produto">
+                <article class="produto" data-id="r01" data-nome="Camiseta Básica" data-preco="59.90">
                     <img src="roupas/camisa 1 (2).jpg" alt="Camiseta Básica">
                     <h3>Camiseta Básica</h3>
                     <p class="preco">R$ 59,90</p>
-                    <button>Adicionar ao Carrinho</button>
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
                 </article>
 
-                <article class="produto">
+                <article class="produto" data-id="r02" data-nome="Vestido de Verão" data-preco="179.90">
                     <img src="roupas/vestido-de-verao.jpg" alt="Vestido de Verão">
                     <h3>Vestido de Verão</h3>
                     <p class="preco">R$ 179,90</p>
-                    <button>Adicionar ao Carrinho</button>
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
                 </article>
 
-                <article class="produto">
+                <article class="produto" data-id="r03" data-nome="Calça Jeans Skinny" data-preco="159.90">
                     <img src="https://loremflickr.com/300/300/jeans,fashion?random=3" alt="Calça Jeans Skinny">
                     <h3>Calça Jeans Skinny</h3>
                     <p class="preco">R$ 159,90</p>
-                    <button>Adicionar ao Carrinho</button>
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
                 </article>
 
-                <article class="produto">
+                <article class="produto" data-id="r04" data-nome="Jaqueta de Couro" data-preco="399.90">
                     <img src="https://loremflickr.com/300/300/jacket,man?random=4" alt="Jaqueta de Couro">
                     <h3>Jaqueta de Couro</h3>
                     <p class="preco">R$ 399,90</p>
-                    <button>Adicionar ao Carrinho</button>
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
                 </article>
 
-                <article class="produto">
+                <article class="produto" data-id="r05" data-nome="Blusa Elegante" data-preco="119.90">
                     <img src="https://loremflickr.com/300/300/blouse,fashion?random=5" alt="Blusa Elegante">
                     <h3>Blusa Elegante</h3>
                     <p class="preco">R$ 119,90</p>
-                    <button>Adicionar ao Carrinho</button>
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
                 </article>
 
-                <article class="produto">
+                <article class="produto" data-id="r06" data-nome="Moletom com Capuz" data-preco="149.90">
                     <img src="https://loremflickr.com/300/300/hoodie?random=6" alt="Moletom com Capuz">
                     <h3>Moletom com Capuz</h3>
                     <p class="preco">R$ 149,90</p>
-                    <button>Adicionar ao Carrinho</button>
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
                 </article>
             </div>
         </section>
@@ -71,5 +76,7 @@
     <footer>
         <p>&copy; 2025 Minha Loja de Roupas e Sapatos. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="carrinho.js"></script>
 </body>
 </html>
